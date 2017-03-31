@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU Affero General Public License, version 3,
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  *******************************************************************************/
-package org.ownchan.server.joint.template.service;
+package org.ownchan.server.joint.thymeleaf.service;
 
 import org.springframework.stereotype.Service;
 import org.thymeleaf.TemplateEngine;

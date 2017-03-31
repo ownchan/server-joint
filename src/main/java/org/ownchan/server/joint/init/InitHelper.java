@@ -5,9 +5,11 @@ import org.apache.commons.lang3.StringUtils;
 
 public class InitHelper {
 
-  private static final String PROPERTY_CONF_DIR = "confDir";
+  public static final String PROPERTY_CONF_DIR = "confDir";
 
-  private static final String PROPERTY_LOG_DIR = "logDir";
+  public static final String PROPERTY_LOG_DIR = "logDir";
+
+  public static final String PROPERTY_APP_MODE = "appMode";
 
   public static void checkRequiredOwnchanServerSystemProperties() {
     String confDir = FilenameUtils.normalizeNoEndSeparator(System.getProperty(PROPERTY_CONF_DIR));

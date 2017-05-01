@@ -14,11 +14,6 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.ownchan.server</groupId>
-      <artifactId>ownchan-server-persistence</artifactId>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
       <scope>provided</scope>
@@ -34,6 +29,11 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-security</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
       <groupId>org.quartz-scheduler</groupId>
       <artifactId>quartz</artifactId>
       <scope>provided</scope>
@@ -46,6 +46,11 @@
     <dependency>
       <groupId>net.sf.ehcache</groupId>
       <artifactId>ehcache</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.vividsolutions</groupId>
+      <artifactId>jts-core</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>

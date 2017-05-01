@@ -18,6 +18,12 @@
  *******************************************************************************/
 package org.ownchan.server.joint.persistence.template.link;
 
+import java.util.List;
+
+import org.ownchan.server.joint.persistence.template.LabelTemplate;
+
 public interface ContentLinkTemplate extends EntityLinkTemplate<ContentLinkTemplate> {
+
+  List<? extends LabelTemplate> getLinkedCreatorLabels();
 
 }

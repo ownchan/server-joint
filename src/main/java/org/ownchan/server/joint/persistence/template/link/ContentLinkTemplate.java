@@ -20,10 +20,19 @@ package org.ownchan.server.joint.persistence.template.link;
 
 import java.util.List;
 
+import org.ownchan.server.joint.persistence.template.ContentTemplate;
 import org.ownchan.server.joint.persistence.template.LabelTemplate;
+import org.ownchan.server.joint.persistence.template.PhysicalContentTemplate;
+import org.ownchan.server.joint.persistence.template.UserTemplate;
 
 public interface ContentLinkTemplate extends EntityLinkTemplate<ContentLinkTemplate> {
 
   List<? extends LabelTemplate> getLinkedCreatorLabels();
+
+  ContentTemplate getLinkedParent();
+
+  UserTemplate getLinkedUser();
+
+  PhysicalContentTemplate getLinkedPhysicalContent();
 
 }

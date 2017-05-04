@@ -18,12 +18,18 @@
  *******************************************************************************/
 package org.ownchan.server.joint.security;
 
-public interface Privilege {
+public enum ContextUserAuthorityType {
+  ROLE(Role.NS_ROLE),
+  PRIVILEGE(Privilege.NS_PRIV);
 
-  String NS_PRIV = "PRIV";
+  private String namespace;
 
-  String PRIV_MANAGE_PRIVILEGES = NS_PRIV + "_MANAGE_PRIVILEGES";
+  private ContextUserAuthorityType(String namespace) {
+    this.namespace = namespace;
+  }
 
-  String PRIV_MANAGE_ROLES = NS_PRIV + "_MANAGE_ROLES";
+  public String getNamespace() {
+    return namespace;
+  }
 
 }

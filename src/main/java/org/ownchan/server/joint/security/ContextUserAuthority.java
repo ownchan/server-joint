@@ -18,12 +18,18 @@
  *******************************************************************************/
 package org.ownchan.server.joint.security;
 
-public interface Privilege {
+import org.springframework.security.core.GrantedAuthority;
 
-  String NS_PRIV = "PRIV";
+public interface ContextUserAuthority extends GrantedAuthority {
 
-  String PRIV_MANAGE_PRIVILEGES = NS_PRIV + "_MANAGE_PRIVILEGES";
+  ContextUserAuthorityType getType();
 
-  String PRIV_MANAGE_ROLES = NS_PRIV + "_MANAGE_ROLES";
+  long getTypeBasedId();
+
+  String getTypeBasedName();
+
+  Long getMsgIdName();
+
+  Long getMsgIdDescription();
 
 }

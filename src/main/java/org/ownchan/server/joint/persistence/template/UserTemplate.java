@@ -50,4 +50,6 @@ public interface UserTemplate extends EntityTemplate<UserTemplate> {
 
   Date getLastPasswordChangeTime();
 
+  Date getBeaconTime();
+
 }

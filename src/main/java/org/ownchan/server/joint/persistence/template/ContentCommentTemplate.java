@@ -22,8 +22,6 @@ import java.util.Date;
 
 public interface ContentCommentTemplate extends EntityTemplate<ContentCommentTemplate> {
 
-  long getId();
-
   Long getParentId();
 
   String getText();

@@ -22,8 +22,6 @@ import java.util.Date;
 
 public interface RoleTemplate extends EntityTemplate<RoleTemplate> {
 
-  long getId();
-
   String getName();
 
   Long getMsgIdName();

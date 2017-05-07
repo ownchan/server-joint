@@ -25,8 +25,6 @@ import org.ownchan.server.joint.persistence.valuetype.ContentAbuseViolationType;
 
 public interface ContentAbuseTemplate extends EntityTemplate<ContentAbuseTemplate> {
 
-  long getId();
-
   Long getContentId();
 
   ContentAbuseViolationType getViolationType();

@@ -25,8 +25,6 @@ import org.ownchan.server.joint.persistence.valuetype.SettingValueType;
 
 public interface SettingTemplate extends EntityTemplate<SettingTemplate> {
 
-  long getId();
-
   String getName();
 
   SettingType getType();

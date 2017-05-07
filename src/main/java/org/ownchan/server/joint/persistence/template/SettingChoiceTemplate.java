@@ -20,8 +20,6 @@ package org.ownchan.server.joint.persistence.template;
 
 public interface SettingChoiceTemplate extends EntityTemplate<SettingChoiceTemplate> {
 
-  long getId();
-
   Long getSettingId();
 
   String getSettingValue();

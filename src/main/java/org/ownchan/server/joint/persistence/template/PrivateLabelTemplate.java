@@ -22,8 +22,6 @@ import java.util.Date;
 
 public interface PrivateLabelTemplate extends EntityTemplate<PrivateLabelTemplate> {
 
-  long getId();
-
   Long getUserId();
 
   String getText();

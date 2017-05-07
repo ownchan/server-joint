@@ -20,4 +20,6 @@ package org.ownchan.server.joint.persistence.template;
 
 public interface EntityTemplate<T extends EntityTemplate<T>> {
 
+  long getId();
+
 }

@@ -16,31 +16,14 @@
  * You should have received a copy of the GNU Affero General Public License, version 3,
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  *******************************************************************************/
-package org.ownchan.server.joint.persistence.template;
+package org.ownchan.server.joint.persistence.template.link;
 
-import java.util.Date;
+import org.ownchan.server.joint.persistence.template.UserTemplate;
 
-import org.ownchan.server.joint.persistence.valuetype.CloudLabelProvider;
-import org.ownchan.server.joint.persistence.valuetype.CloudLabelStatus;
+public interface RtcConversationLinkTemplate extends EntityLinkTemplate<RtcConversationLinkTemplate> {
 
-public interface CloudLabelTemplate extends EntityTemplate<CloudLabelTemplate> {
+  UserTemplate getLinkedRequesterUser();
 
-  String getText();
-
-  CloudLabelStatus getStatus();
-
-  String getStatusReason();
-
-  String getInitialText();
-
-  CloudLabelProvider getCloudProvider();
-
-  String getCloudProviderLabelId();
-
-  Date getCreateTime();
-
-  Date getUpdateTime();
-
-  Long getUpdateUserId();
+  UserTemplate getLinkedResponderUser();
 
 }

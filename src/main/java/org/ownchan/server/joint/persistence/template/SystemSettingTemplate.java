@@ -22,8 +22,6 @@ import java.util.Date;
 
 public interface SystemSettingTemplate extends EntityTemplate<SystemSettingTemplate> {
 
-  long getId();
-
   Long getSettingId();
 
   Long getChoiceId();

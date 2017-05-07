@@ -22,8 +22,6 @@ import java.util.Date;
 
 public interface UserBanTemplate extends EntityTemplate<UserBanTemplate> {
 
-  long getId();
-
   Long getUserId();
 
   boolean isActive();

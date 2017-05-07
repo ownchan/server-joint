@@ -22,8 +22,6 @@ import java.util.Date;
 
 public interface LabelTemplate extends EntityTemplate<LabelTemplate> {
 
-  long getId();
-
   String getText();
 
   Date getCreateTime();

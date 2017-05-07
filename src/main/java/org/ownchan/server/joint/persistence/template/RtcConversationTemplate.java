@@ -20,27 +20,22 @@ package org.ownchan.server.joint.persistence.template;
 
 import java.util.Date;
 
-import org.ownchan.server.joint.persistence.valuetype.CloudLabelProvider;
-import org.ownchan.server.joint.persistence.valuetype.CloudLabelStatus;
+public interface RtcConversationTemplate extends EntityTemplate<RtcConversationTemplate> {
 
-public interface CloudLabelTemplate extends EntityTemplate<CloudLabelTemplate> {
+  Long getRequesterUserId();
 
-  String getText();
+  Long getResponderUserId();
 
-  CloudLabelStatus getStatus();
+  Date getRequesterBeaconTime();
 
-  String getStatusReason();
+  Date getResponderBeaconTime();
 
-  String getInitialText();
+  String getRequesterOffer();
 
-  CloudLabelProvider getCloudProvider();
-
-  String getCloudProviderLabelId();
+  String getResponderAnswer();
 
   Date getCreateTime();
 
   Date getUpdateTime();
-
-  Long getUpdateUserId();
 
 }

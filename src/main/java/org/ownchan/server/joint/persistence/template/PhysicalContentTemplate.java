@@ -27,8 +27,6 @@ import org.ownchan.server.joint.persistence.valuetype.PhysicalContentType;
 
 public interface PhysicalContentTemplate extends EntityTemplate<PhysicalContentTemplate> {
 
-  long getId();
-
   PhysicalContentType getType();
 
   PhysicalContentStatus getStatus();

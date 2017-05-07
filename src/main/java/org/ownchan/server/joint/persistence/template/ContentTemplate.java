@@ -25,8 +25,6 @@ import org.ownchan.server.joint.persistence.valuetype.geom.NullablePoint;
 
 public interface ContentTemplate extends EntityTemplate<ContentTemplate> {
 
-  long getId();
-
   ContentStatus getStatus();
 
   String getStatusReason();

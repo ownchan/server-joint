@@ -24,8 +24,6 @@ import org.ownchan.server.joint.persistence.valuetype.UserStatus;
 
 public interface UserTemplate extends EntityTemplate<UserTemplate> {
 
-  long getId();
-
   UserStatus getStatus();
 
   String getStatusReason();

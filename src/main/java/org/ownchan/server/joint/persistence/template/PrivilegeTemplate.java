@@ -22,8 +22,6 @@ import java.util.Date;
 
 public interface PrivilegeTemplate extends EntityTemplate<PrivilegeTemplate> {
 
-  long getId();
-
   String getName();
 
   Long getMsgIdName();

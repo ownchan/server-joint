@@ -24,8 +24,6 @@ import org.ownchan.server.joint.persistence.valuetype.MessageType;
 
 public interface MessageTemplate extends EntityTemplate<MessageTemplate> {
 
-  long getId();
-
   String getCode();
 
   MessageType getType();
